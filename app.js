@@ -1,9 +1,3 @@
-/*Preload page*/
-window.onload = function(){
-    $("#preload").fadeOut();
-    $("body").removeClass("hidden");
-}
-
 /*Menu*/
 ((d) => {
     //Se declaran anteponiendo el $ porque 
@@ -50,6 +44,11 @@ $('.owl-carousel').owlCarousel({
         }
     }
 })
+
+window.onload = function(){
+    $("#preload").fadeOut();
+    $("body").removeClass("hidden");
+};
 
 /*ContactForm*/
 
