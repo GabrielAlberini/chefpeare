@@ -1,3 +1,9 @@
+/*Preload page*/
+window.onload = function(){
+    $("#preload").fadeOut();
+    $("body").removeClass("hidden");
+}
+
 /*Menu*/
 ((d) => {
     //Se declaran anteponiendo el $ porque 
@@ -57,6 +63,7 @@ $('.owl-carousel').owlCarousel({
     const $form = d.querySelector(".contact-form"),
         $loader = d.querySelector(".contact-form-loader"),
         $response = d.querySelector(".contact-form-response");  
+
         $form.addEventListener("submit", e=> {
 
             e.preventDefault();
@@ -81,4 +88,5 @@ $('.owl-carousel').owlCarousel({
                 }, 1500)
             });   
         });
+
 })(document)
