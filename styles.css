@@ -317,6 +317,14 @@ p {
     animation: appear 1s;
 }
 
+.notas-section {
+    text-align: center;
+}
+
+.notas-section > p > a {
+    text-decoration: none;
+}
+
 @keyframes appear {
     0% {
         height: 0;
@@ -387,7 +395,7 @@ p {
         pointer-events: auto;
         flex-direction: row;
         width: auto;
-        margin-top: 1.2rem;
+        margin: 1.2rem 1rem 0 0;
     }
     .menu a {
         padding: 0 1rem;
@@ -483,7 +491,7 @@ p {
     }
 
     .trailer-container {
-        padding: 0;
+        padding-top: 0;
     }
 
     .text-lg-center {
@@ -552,8 +560,7 @@ p {
 }
 
 .footer {
-    margin-bottom: var(--header-height);
-    background-color: var(--third-color);
+    background-color: var(--first-color);
     color: var(--white-color);
     text-align: center;
     padding: 1.5rem;
@@ -737,7 +744,7 @@ p {
 
     .footer small > a {
         text-decoration: none;
-        color: var(--first-color);
+        color: var(--gray-dark-color);
     }
     
     .title-pedro {
