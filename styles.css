@@ -647,6 +647,10 @@ p {
     text-align: center;
 }
 
+.service-align-self {
+    align-self: center;
+}
+
 .service-card h3 {
     color: var(--title-color);
 }
