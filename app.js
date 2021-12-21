@@ -1,9 +1,10 @@
-/*Menu*/
+/*Menu y botón cambio de idioma*/
 ((d) => {
     //Se declaran anteponiendo el $ porque 
     //están haciendo referencia a un elemento del DOM
     const $btnMenu = d.querySelector(".menu-btn"),
-    $menu = d.querySelector(".menu")
+    $menu = d.querySelector(".menu"),
+    $check = d.querySelector(".check");
 
     $btnMenu.addEventListener("click", e => {
         $btnMenu.firstElementChild.classList.toggle("none");
@@ -18,7 +19,13 @@
         $menu.classList.remove("is-active")
     });
 
-
+    //Cambio de idioma
+    $check.addEventListener("click", () => {
+        let checkValue = $check.checked;
+        checkValue 
+        ? location.href="leng/index.html"
+        : location.href="../index.html"
+    })
 
 })(document);
 
@@ -89,3 +96,6 @@ window.onload = function(){
         });
 
 })(document)
+
+//Cambio de lenguaje
+

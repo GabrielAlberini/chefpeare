@@ -211,6 +211,61 @@ p {
     pointer-events: auto;
 }
 
+/*Lenguage button*/
+
+.en {
+    color: var(--first-color);
+}
+
+.es {
+    color: var(--second-color);
+}
+
+.check {
+    position: relative;
+    width: 50px;
+    margin: 0 auto 2rem;
+}
+
+.check::before {
+    content: 'ES EN';
+    position: absolute;
+    width: 50px;
+    height: 25px;
+    background-color: var(--gray-color);
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    padding-left: 7px;
+    padding-top: 2px;
+    font-family: var(--font);
+    font-weight: 900;
+}
+
+.check::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-color: var(--second-color);
+    border-radius: 25px;
+    transition: 0.25s;
+    border: 2px solid #333;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    padding-right: 4px;
+}
+
+.check:checked::after {
+    left: 25px;
+}
+
+.check:checked::after {
+    background-color: var(--first-color);
+}
+
+
 @media screen and (min-width:1024px) {
     .contact-form {
         display: grid;
@@ -260,7 +315,7 @@ p {
 
 .hero-image-opacity {
     width: 100%;
-    min-height: 100vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -792,7 +847,7 @@ p {
     }
     
     .title-pedro {
-        margin-top: 6rem;
+        margin-top: 3rem;
     }
 
     .contact-cards {
