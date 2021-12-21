@@ -20,7 +20,6 @@
     --transparent-color: rgba(0, 0, 0, 0);
     --font: "font", sans-serif;
     --max-width: 1200px;
-    --header-height: 4rem;
 }
 
 /*Reset*/
@@ -224,7 +223,7 @@ p {
 .check {
     position: relative;
     width: 50px;
-    margin: 0 auto 2rem;
+    margin: .5rem auto 2rem;
 }
 
 .check::before {
@@ -354,7 +353,7 @@ p {
     background-color: var(--text-color);
     position: fixed;
     left: 0;
-    bottom: 4rem;
+    bottom: 3.8rem;
     pointer-events: none;
     opacity: 0;
     transition: opacity .8s ease;
@@ -641,7 +640,7 @@ p {
     color: var(--white-color);
     text-align: center;
     padding: 1.5rem;
-    margin-bottom: var(--header-height);
+    margin-bottom: 3.7rem;
 }
 
 .header {
@@ -667,91 +666,21 @@ p {
     align-items: center;
 }
 
-.portfolio-card {
-    position: relative;
-    width: 100%;
-    height: 400px;
-    margin: 0 auto;
-    display: block;
-}
-
-.portfolio-card:hover .portfolio-card-info {
-    opacity: 1;
-    pointer-events: auto;
-}
-
-.portfolio-card img {
-    width: 100%;
-    height: 100%;
-    object-fit:scale-down;
-}
-
-.portfolio-card-info {
-    position: absolute;
-    top:0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: var(--first-alpha-color);
-    color: var(--white-color);
-    padding: 1rem;
-    opacity: 0;
-    pointer-events: none;
-    transition: all .5s ease-out;
-}
-
-.portfolio-card-info > div {
-    padding: 1rem;
-    border: thin solid var(--white-color);
-    width: 100%;
-    height: 100%;
-}
-
-.portfolio-card-info >div p {
-    text-align: justify;
-}
-
-.portfolio-modal {
-    background-color: white;
-    padding: 1rem;
-    max-width: 400px;
-    display: flex;
-    flex-direction: column;
-}
-
-.portfolio-modal h3 {
-    border-bottom: medium solid var(--first-color);
-    padding: .5rem 0;
-    margin: 1rem auto;
-    color: var(--title-color);
-}
-
-.porfolio-details {
-    display: grid;
-    grid-template-columns: 40% 60%;
-    grid-auto-rows: 2rem;
-}
-
-.trailer {
-    width: 420px; 
-    height: 275px;
-}
-
-.service-card {
+.card-item {
     margin: 1rem auto;
     padding: 1rem;
     text-align: center;
 }
 
-.service-align-self {
+.card-align-self {
     align-self: center;
 }
 
-.service-card h3 {
+.card-item h3 {
     color: var(--title-color);
 }
 
-.service-card .icon {
+.card-item .icon {
     color: var(--first-color);
     margin-bottom: 1.25rem;
     font-size: 3rem;
@@ -770,20 +699,20 @@ p {
         margin: auto;
     }
     
-    .portfolio > .container {
+    .carousel > .container {
         display: grid;
         grid-template-columns: repeat(2, 50%);  
     }
 
-    .portfolio-modal {
+    .carousel-modal {
         flex-direction: row;
     }    
 
-    .portfolio .section-title {
+    .carousel .section-title {
         grid-column: span 2;
     }
     
-    .portfolio-modal {
+    .carousel-modal {
     background-color: white;
     padding: 1rem;
     max-width: 400px;
@@ -859,30 +788,30 @@ p {
         height: 100%;
     }
 
-    .portfolio > .container {
+    .carousel > .container {
         grid-template-columns: repeat(3, 1fr);  
     }
 
-    .portfolio-modal {
+    .carousel-modal {
         max-width: 800px;
         flex-direction: row;
     } 
     
-    .portfolio-info {
+    .carousel-info {
         margin-left: 1rem;
         align-self: center;
     }
 
-    .portfolio .section-title {
+    .carousel .section-title {
         grid-column: span 3;
     }
 
-    .service-card {
+    .card-item {
         padding: 0;
         margin: 0;
         margin: 3rem 0 3rem 0;
     }
-    .service-card p{
+    .card-item p{
         margin: 0;
     }
 
@@ -890,7 +819,7 @@ p {
         position: absolute;
         top: 0;
         padding: 0.5rem;
-        height: calc(var(--header-height) - 0.5rem);
+        height: 3.5rem;
         background-color: var(--transparent-color);
     }
 }
