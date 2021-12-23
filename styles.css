@@ -478,7 +478,7 @@ p {
     font-weight: bold;
     text-align: center;
     text-decoration: none;
-    background-color: var(--first-color);
+    background-color: var(--second-color);
     color: var(--white-color);
 }
 
