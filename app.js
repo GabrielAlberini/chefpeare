@@ -65,12 +65,33 @@ const $form = d.querySelector(".contact-form"),
     const $check = d.querySelector(".check")
 
     $check.addEventListener("click", () => {
+        console.log($check)
         let checkValue = $check.checked;
         checkValue 
         ? location.href="leng/index.html"
         : location.href="../index.html"
     })
 })(document);
+
+
+/*Música de página*/
+((d)=> {
+    const $musica = d.querySelector(".musica-check"),
+        $musicaIngles = d.querySelector(".musica-ingles"),
+        $sonido = d.querySelector(".sonido-mp3")
+
+    $musica.addEventListener('click', () => {
+        let checkMusica = $musica.checked;
+        let checkMusicaIngles = $musicaIngles.checked;
+        checkMusica
+        ?$sonido.innerHTML ='<audio src="assets/audio-pagina.mp3" autoplay></audio>'
+        :$sonido.innerHTML = '';
+        checkMusicaIngles
+        ?$sonido.innerHTML ='<audio src="../assets/audio-pagina.mp3" autoplay></audio>'
+        :$sonido.innerHTML = '';
+    })
+})(document);
+
 
 /*Owl Carousel whit JQuery*/
 $('.owl-carousel').owlCarousel({
@@ -92,9 +113,6 @@ $('.owl-carousel').owlCarousel({
         }
     }
 })
-
-
-
 
 
 
