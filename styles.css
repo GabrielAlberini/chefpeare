@@ -254,6 +254,7 @@ p {
     display: flex;
     align-items: center;
     padding-right: 4px;
+    cursor: pointer;
 }
 
 .check:checked::after {
@@ -303,6 +304,7 @@ p {
     align-items: center;
     padding-right: 4px;
     z-index: 960;
+    cursor: pointer;
 }
 
 .musica-check:checked::after {
@@ -547,7 +549,7 @@ p {
     .menu a:hover {
         background-color: transparent;
     }
-    
+
     .notas-section > p > a > i {
         display: inline-block;
     }

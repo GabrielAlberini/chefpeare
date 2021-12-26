@@ -4,7 +4,7 @@ window.onload = function(){
     $("body").removeClass("hidden");
 };
 
-/*Menu y botón cambio de idioma*/
+/*Menu*/
 ((d) => {
     //Se declaran anteponiendo el $ porque 
     //están haciendo referencia a un elemento del DOM
@@ -83,6 +83,7 @@ const $form = d.querySelector(".contact-form"),
     $musica.addEventListener('click', () => {
         let checkMusica = $musica.checked;
         let checkMusicaIngles = $musicaIngles.checked;
+        
         checkMusica
         ?$sonido.innerHTML ='<audio src="assets/audio-pagina.mp3" autoplay></audio>'
         :$sonido.innerHTML = '';
