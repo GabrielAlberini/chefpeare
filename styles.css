@@ -275,7 +275,7 @@ p {
 }
 
 .musica-check::before {
-    content: 'ON OFF';
+    content: '';
     position: absolute;
     width: 50px;
     height: 25px;
@@ -302,6 +302,7 @@ p {
     display: flex;
     align-items: center;
     padding-right: 4px;
+    z-index: 960;
 }
 
 .musica-check:checked::after {
@@ -310,6 +311,21 @@ p {
 
 .musica-check:checked::after {
     background-color: var(--first-color);
+}
+
+.musica-icon-on {
+    color: black;
+    position: absolute;
+    left: 43px;
+    top: 23px;
+    z-index: 800;
+}
+.musica-icon-off {
+    color: var(--black-color);
+    position: absolute;
+    left: 22px;
+    top: 23px;
+    z-index: 700;
 }
 
 @media screen and (min-width:1024px) {
@@ -339,6 +355,20 @@ p {
 
     .musica-check {
         margin: 1rem 0 0 1rem;
+    }
+
+    .musica-icon-on {
+        color: var(--text-color);
+        position: absolute;
+        left: 51px;
+        top: 32.5px;
+        z-index: 800;
+    }
+    .musica-icon-off {
+        color: var(--black-color);
+        position: absolute;
+        left: 29px;
+        top: 32px;
     }
 
     .up-boton {
@@ -437,6 +467,7 @@ p {
 
 .notas-section > p > a > i {
     color: var(--second-color);
+    display: block;
 }
 
 @keyframes appear {
@@ -515,6 +546,10 @@ p {
     }
     .menu a:hover {
         background-color: transparent;
+    }
+    
+    .notas-section > p > a > i {
+        display: inline-block;
     }
 }
 
