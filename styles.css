@@ -197,7 +197,7 @@ p {
 
 .contact-social i {
     font-size: 2rem;
-    padding: 1rem;
+    padding: .6rem;
     color: var(--second-color);
     cursor: pointer;
 }
@@ -224,6 +224,7 @@ p {
 .check {
     position: relative;
     width: 50px;
+    margin: .5rem auto 2rem auto;
 }
 
 .check::before {
@@ -270,6 +271,7 @@ p {
 .musica-check {
     position: relative;
     width: 50px;
+    margin: 0 auto .7rem auto;
 }
 
 .musica-check::before {
@@ -418,7 +420,6 @@ p {
 .notas-section {
     text-align: center;
     align-self: center;
-    margin: 1rem auto;
 }
 
 .notas-section p {
@@ -428,6 +429,10 @@ p {
 
 .notas-section > p > a {
     text-decoration: none;
+}
+
+.notas-section > p > a > i {
+    color: var(--second-color);
 }
 
 @keyframes appear {
@@ -755,6 +760,10 @@ p {
 
 .card-align-self {
     align-self: center;
+}
+
+.container-staff > p > i{
+    color: var(--first-color);
 }
 
 .card-item h3 {
