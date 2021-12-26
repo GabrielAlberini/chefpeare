@@ -337,6 +337,10 @@ p {
         margin-left: 0;
     }
 
+    .musica-check {
+        margin: 1rem 0 0 1rem;
+    }
+
     .up-boton {
         width: 3rem;
         height: 3rem;
