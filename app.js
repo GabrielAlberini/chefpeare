@@ -83,13 +83,19 @@ const $form = d.querySelector(".contact-form"),
     $musica.addEventListener('click', () => {
         let checkMusica = $musica.checked;
         let checkMusicaIngles = $musicaIngles.checked;
+        console.log(checkMusica)
+
+        if(checkMusica === true) {
+            $sonido.innerHTML =''
+        } else if (checkMusica === false) {
+            $sonido.innerHTML = '<audio src="assets/audio-pagina.mp3" autoplay></audio>';
+        }
         
-        checkMusica
-        ?$sonido.innerHTML ='<audio src="assets/audio-pagina.mp3" autoplay></audio>'
-        :$sonido.innerHTML = '';
-        checkMusicaIngles
-        ?$sonido.innerHTML ='<audio src="../assets/audio-pagina.mp3" autoplay></audio>'
-        :$sonido.innerHTML = '';
+        if(checkMusicaIngles === true) {
+            $sonido.innerHTML =''
+        } else if (checkMusicaIngles === false) {
+            $sonido.innerHTML = '<audio src="../assets/audio-pagina.mp3" autoplay></audio>';
+        }
     })
 })(document);
 
