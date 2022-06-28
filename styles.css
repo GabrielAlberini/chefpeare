@@ -69,7 +69,7 @@ h2 {
 
 h3 {
     margin: 0;
-    font-size: 1.25rem;
+    font-size: 1rem;
 }
 
 h4 {
@@ -240,7 +240,7 @@ p {
     padding-left: 7px;
     font-family: var(--font);
     font-weight: 900;
-    font-size: 10px;
+    font-size: 11px;
 }
 
 .check::after {
@@ -410,7 +410,8 @@ p {
 
 .hero-image-title {
     /*Fluid design al tamaño de la pantalla, de esta manera evitamos las MQ*/
-    font-size: 4rem;
+    font-size: 3.3rem;
+    margin-bottom: 1rem;
     color: var(--white-color);
 }
 
