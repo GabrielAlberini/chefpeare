@@ -1,3 +1,9 @@
+/*Carga previa a mostrar contenido de página*/
+window.onload = function(){
+    $("#preload").fadeOut();
+    $("body").removeClass("hidden");
+};
+
 /*Menu*/
 ((d) => {
     //Se declaran anteponiendo el $ porque 
