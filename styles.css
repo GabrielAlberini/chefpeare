@@ -1,6 +1,6 @@
 @font-face {
     font-family: "font";
-    src: url("font/BAHNSCHRIFT.TTF");
+    src: url("./assets/font/BAHNSCHRIFT.TTF");
 }
 
 :root {
