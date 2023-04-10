@@ -269,14 +269,13 @@ p {
 }
 
 /*Music botton*/
-
 .musica-check {
     position: relative;
     width: 50px;
     margin: 0 auto .7rem auto;
-}
-
-.musica-check::before {
+  }
+  
+  .musica-check::before {
     content: '';
     position: absolute;
     width: 50px;
@@ -289,9 +288,9 @@ p {
     padding-top: 2px;
     font-family: var(--font);
     font-weight: 900;
-}
-
-.musica-check::after {
+  }
+  
+  .musica-check::after {
     content: '';
     position: absolute;
     width: 25px;
@@ -306,30 +305,16 @@ p {
     padding-right: 4px;
     z-index: 960;
     cursor: pointer;
-}
-
-.musica-check:checked::after {
+  }
+  
+  .musica-check:checked::after {
     left: 25px;
-}
-
-.musica-check:checked::after {
+  }
+  
+  .musica-check:checked::after {
     background-color: var(--first-color);
-}
-
-.musica-icon-on {
-    color: black;
-    position: absolute;
-    left: 43px;
-    top: 23px;
-    z-index: 800;
-}
-.musica-icon-off {
-    color: var(--black-color);
-    position: absolute;
-    left: 22px;
-    top: 23px;
-    z-index: 700;
-}
+  }
+  
 
 @media screen and (min-width:1024px) {
     .check {
