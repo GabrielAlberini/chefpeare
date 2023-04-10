@@ -75,29 +75,22 @@ window.onload = function () {
   });
 })(document);
 
-// Obtener el interruptor de música y el elemento de sonido
-const musicaToggle = document.getElementById("musica-toggle");
-const sonidoMp3 = document.querySelector(".sonido-mp3");
+/*Música de página*/
+((d) => {
+  const checkbox = d.querySelector(".musica-check");
+  const checkboxIngles = d.querySelector(".musica-ingles");
+  const sonido = d.querySelector(".sonido-mp3");
 
-// Reproducir el sonido automáticamente al cargar la página por primera vez
-window.addEventListener("DOMContentLoaded", function () {
-  sonidoMp3.innerHTML = `<audio autoplay><source src="${sonidoMp3.dataset.src}"></audio>`;
-});
+  checkbox.addEventListener("click", () => {
+    const checkMusica = checkbox.checked;
+    const checkMusicaIngles = checkboxIngles.checked;
 
-// Alternar la música encendida/apagada al hacer clic en el interruptor
-musicaToggle.addEventListener("click", function () {
-  if (this.checked) {
-    // Música encendida
-    sonidoMp3.innerHTML = "";
-    document.querySelector(".musica-on").classList.remove("active");
-    document.querySelector(".musica-off").classList.add("active");
-  } else {
-    // Música apagada
-    sonidoMp3.innerHTML = `<audio autoplay><source src="${sonidoMp3.dataset.src}"></audio>`;
-    document.querySelector(".musica-off").classList.remove("active");
-    document.querySelector(".musica-on").classList.add("active");
-  }
-});
+    sonido.innerHTML =
+      checkMusica || checkMusicaIngles
+        ? ""
+        : '<audio src="assets/audio-pagina.mp3" autoplay></audio>';
+  });
+})(document);
 
 /*Owl Carousel whit JQuery*/
 $(".owl-carousel").owlCarousel({
