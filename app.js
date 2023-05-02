@@ -79,16 +79,19 @@ window.onload = function () {
 ((d) => {
   const checkbox = d.querySelector(".musica-check");
   const checkboxIngles = d.querySelector(".musica-ingles");
-  const sonido = d.querySelector(".sonido-mp3");
+  const sonidoEs = d.querySelector(".sonido-mp3-es");
+  const sonidoEn = d.querySelector(".sonido-mp3-en");
 
   checkbox.addEventListener("click", () => {
     const checkMusica = checkbox.checked;
     const checkMusicaIngles = checkboxIngles.checked;
 
-    sonido.innerHTML =
-      checkMusica || checkMusicaIngles
-        ? ""
-        : '<audio src="assets/audio-pagina.mp3" autoplay></audio>';
+    sonidoEs.innerHTML = checkMusica
+      ? '<audio src="assets/audio-pagina.mp3" autoplay></audio>'
+      : "";
+    sonidoEn.innerHTML = checkMusica
+      ? '<audio src="../assets/audio-pagina.mp3" autoplay></audio>'
+      : "";
   });
 })(document);
 
