@@ -89,7 +89,7 @@ window.onload = function () {
     sonidoEs.innerHTML = checkMusica
       ? '<audio src="assets/audio-pagina.mp3" autoplay></audio>'
       : "";
-    sonidoEn.innerHTML = checkMusica
+    sonidoEn.innerHTML = checkMusicaIngles
       ? '<audio src="../assets/audio-pagina.mp3" autoplay></audio>'
       : "";
   });
